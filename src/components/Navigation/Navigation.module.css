@@ -1,0 +1,17 @@
+.NavigationContainer {
+  background-color: var(--dark-secondary);
+  color: white;
+  padding: 20px 30px;
+}
+
+.NavigationList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.AllMenuNavigation {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}

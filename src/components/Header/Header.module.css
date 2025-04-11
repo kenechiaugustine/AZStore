@@ -1,0 +1,62 @@
+.main {
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LocationContainer */
+.LocationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.LocationIcon {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.Description{
+  color: var(--white-secondary);
+  font-size: 0.8rem;
+}
+
+.Description span {
+  font-weight: 900;
+  color: var(--white);
+}
+
+/* SearchContainer */
+.SearchContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 1;
+  background-color: var(--white);
+  outline: 1px solid white;
+}
+
+.SearchSelection {
+  background-color: #dddada;
+  color: black;
+  padding: 10px;
+}
+
+.SearchInput {
+  flex: 1;
+  /* height: 90px; */
+  outline: none;
+  border: none;
+}
+
+.SearchIcon {
+  padding: 10px 20px;
+  color: var(--dark);
+  cursor: pointer;
+  background-color: yellow;
+}

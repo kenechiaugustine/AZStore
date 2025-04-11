@@ -1,0 +1,110 @@
+.FooterContainer {
+  background-color: var(--dark);
+  color: var(--white-secondary);
+}
+
+.FooterLinks {
+  display: flex;
+  padding: 50px 150px;
+  justify-content: space-around;
+}
+
+.FooterLinkText {
+  font-weight: bolder;
+  color: white;
+}
+
+.FooterLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterLinks ul li a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+/* FooterCurrencyContainer */
+.FooterCurrencyContainer {
+  border-top: 1px solid #3d3c3c;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+}
+
+.FooterCurrencyContainer div {
+  border: 1px solid #474646;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+  gap: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 150px; */
+  border-radius: 3px;
+}
+
+.FooterCurrencyContainer div span {
+  /* margin-top: 2px; */
+  font-size: 0.6rem;
+}
+
+.FooterCurrencyContainer div p {
+  flex: 1;
+  font-size: 0.7rem;
+}
+
+.FooterCurrencyContainer img {
+  margin: 15px 60px 0 0;
+}
+
+.FooterOtherLinks ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--dark-secondary);
+  padding: 50px 230px;
+}
+
+.FooterOtherLinks ul li {
+  width: 150px;
+}
+
+.FooterOtherLinks ul li a {
+  font-size: 0.7em;
+}
+
+.FooterOtherLinks ul li a:hover {
+  text-decoration: underline;
+}
+
+.FooterOtherLinks ul li a span {
+  color: var(--white);
+}
+
+.FooterOtherLinks ul li a p {
+  color: var(--white-secondary);
+}
+
+.FooterCopyright {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  border-top: 1px solid #3f3e3e;
+  background-color: var(--dark-secondary);
+}
+
+.FooterCopyright p {
+  width: 800px;
+  text-align: center;
+  color: var(--white);
+  font-size: 0.8em;
+}
