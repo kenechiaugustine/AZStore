@@ -108,3 +108,21 @@
   color: var(--white);
   font-size: 0.8em;
 }
+
+@media screen and (max-width: 1216px) {
+  .FooterLinks {
+    padding: 50px 5px;
+  }
+
+  .FooterOtherLinks ul {
+    padding: 50px 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .FooterLinks {
+    /* background-color: red; */
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+}
