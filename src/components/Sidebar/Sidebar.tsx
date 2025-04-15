@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FaTimes, FaArrowRight } from 'react-icons/fa';
+import { FaAngleRight } from 'react-icons/fa';
 import { useSidebar } from '@/hooks/SidebarContext';
 import styles from './Sidebar.module.css';
 
@@ -18,19 +18,19 @@ export default function Sidebar() {
         <ul>
           <li>
             <a href="#">Prime Video</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Music</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Kindle E-readers & Books</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Appstore</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           {/* Add more items */}
         </ul>
@@ -40,15 +40,15 @@ export default function Sidebar() {
         <ul>
           <li>
             <a href="#">Prime Video</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Music</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Kindle E-readers & Books</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Appstore</a>
@@ -61,19 +61,19 @@ export default function Sidebar() {
         <ul>
           <li>
             <a href="#">Prime Video</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Music</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Kindle E-readers & Books</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Appstore</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
         </ul>
       </div>
@@ -82,23 +82,23 @@ export default function Sidebar() {
         <ul>
           <li>
             <a href="#">Electronics</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Computers</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Smart Home</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Arts & Crafts</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">See all</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>{' '}
         </ul>
       </div>
@@ -107,23 +107,23 @@ export default function Sidebar() {
         <ul>
           <li>
             <a href="#">Gift Cards</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Shop By Interest</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">Amazon Live</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">International Shopping</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
           <li>
             <a href="#">See all</a>
-            <FaArrowRight />
+            <FaAngleRight />
           </li>
         </ul>
       </div>
