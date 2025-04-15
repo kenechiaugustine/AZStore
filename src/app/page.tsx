@@ -5,11 +5,9 @@ import Navigation from '@/components/Navigation/Navigation';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import Sidebar from '@/components/Sidebar/Sidebar';
-
-const cookerImg = 'https://placehold.co/600x400';
-const coffeeImg = 'https://placehold.co/100x75';
-const potsPansImg = 'https://placehold.co/100x75';
-const kettlesImg = 'https://placehold.co/100x75';
+import ContentCardBasic from '@/components/HomeCardComponent/CardBasic';
+import ContentCardSingle from '@/components/HomeCardComponent/CardSingle';
+import ContentCardBasic2 from '@/components/HomeCardComponent/CardBasic2';
 
 interface ContentCardProps {
   title: string;
@@ -41,51 +39,68 @@ export default function HomePage() {
           <main className={styles.main}>
             <div className={styles.ImageContainer}></div>
             <div className={styles.contentGrid}>
-              <ContentCard title="Top categories in Kitchen appliances" footerLink="#" footerText="Explore all products in Kitchen">
-                <div className={styles.kitchenLayout}>
-                  <div className={styles.mainItem}>
-                    <img src={cookerImg} alt="Cooker" className={styles.mainItemImg} />
-                    <p className={styles.itemLabel}>Cooker</p>
-                  </div>
-                  <div className={styles.subItemsGrid}>
-                    <div className={styles.subItem}>
-                      <img src={coffeeImg} alt="Coffee Maker" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Coffee</p>
-                    </div>
-                    <div className={styles.subItem}>
-                      <img src={potsPansImg} alt="Pots and Pans" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Pots and P...</p>
-                    </div>
-                    <div className={styles.subItem}>
-                      <img src={kettlesImg} alt="Kettle" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Kettles</p>
-                    </div>
-                  </div>
-                </div>
-              </ContentCard>
+              <ContentCardBasic
+                title="Shop deals"
+                footerLink="#"
+                footerText="See all deals"
+                labels={['Jeans under $50', 'Tops under $25', 'Dresses under $30', 'Shoes under $50']}
+                images={['https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75']}
+              />
 
-              <ContentCard title="Top categories in Kitchen appliances" footerLink="#" footerText="Explore all products in Kitchen">
-                <div className={styles.kitchenLayout}>
-                  <div className={styles.mainItem}>
-                    <img src={cookerImg} alt="Cooker" className={styles.mainItemImg} />
-                    <p className={styles.itemLabel}>Cooker</p>
-                  </div>
-                  <div className={styles.subItemsGrid}>
-                    <div className={styles.subItem}>
-                      <img src={coffeeImg} alt="Coffee Maker" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Coffee</p>
-                    </div>
-                    <div className={styles.subItem}>
-                      <img src={potsPansImg} alt="Pots and Pans" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Pots and P...</p>
-                    </div>
-                    <div className={styles.subItem}>
-                      <img src={kettlesImg} alt="Kettle" className={styles.subItemImg} />
-                      <p className={styles.itemLabel}>Kettles</p>
-                    </div>
-                  </div>
-                </div>
-              </ContentCard>
+              <ContentCardSingle
+                title="Some gaming items"
+                footerLink="#"
+                footerText="See all deals"
+                images={['https://placehold.co/100x75']}
+                labels={['Jeans under $50']}
+              />
+
+              {Array.from({ length: 2 }, (_, index) => (
+                <ContentCardBasic
+                  title="Shop deals"
+                  footerLink="#"
+                  footerText="See all deals"
+                  labels={['Jeans under $50', 'Tops under $25', 'Dresses under $30', 'Shoes under $50']}
+                  images={[
+                    'https://placehold.co/100x75',
+                    'https://placehold.co/100x75',
+                    'https://placehold.co/100x75',
+                    'https://placehold.co/100x75',
+                  ]}
+                />
+              ))}
+
+              <ContentCardBasic2
+                title="Yo top stuff here. Look no further, we gat u"
+                footerLink="#"
+                footerText="See all deals"
+                labels={['Jeans under $50', 'Tops under $25', 'Dresses under $30', 'Shoes under $50']}
+                images={['https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75']}
+              />
+
+              <ContentCardBasic
+                title="Shop deals"
+                footerLink="#"
+                footerText="See all deals"
+                labels={['Jeans under $50', 'Tops under $25', 'Dresses under $30', 'Shoes under $50']}
+                images={['https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75']}
+              />
+
+              <ContentCardSingle
+                title="Some gaming items"
+                footerLink="#"
+                footerText="See all deals"
+                images={['https://placehold.co/100x75']}
+                labels={['Jeans under $50']}
+              />
+
+              <ContentCardBasic
+                title="Shop deals"
+                footerLink="#"
+                footerText="See all deals"
+                labels={['Jeans under $50', 'Tops under $25', 'Dresses under $30', 'Shoes under $50']}
+                images={['https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75']}
+              />
             </div>
           </main>
           <Footer />
