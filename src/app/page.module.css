@@ -1,4 +1,135 @@
 .main {
-    height: 100vh;
-    background-color: whitesmoke;
+  /* overflow: hidden; */
+  /* height: 100vh; */
+  background-color: whitesmoke;
+}
+
+.ImageContainer {
+  background-image: url('./../../public/banner.jpg');
+  height: 500px;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #33312d;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.cardWrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.cardTitle {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #0f1111;
+}
+
+.cardContent {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.cardFooterLink {
+  font-size: 13px;
+  margin-top: auto; /* Push link to the bottom */
+  display: inline-block;
+  text-decoration: none;
+  color: #007185; /* Amazon's link blue */
+}
+
+.cardFooterLink:hover {
+  color: #c7511f; /* Amazon's link hover orange */
+  text-decoration: underline;
+}
+
+.kitchenLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainItem {
+  text-align: left;
+}
+
+.mainItemImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 5px;
+  display: block; /* Remove potential extra space below img */
+}
+
+.subItemsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for the smaller items */
+  gap: 10px 15px; /* Space within the sub-grid (row column)*/
+}
+
+.subItem {
+  text-align: left;
+}
+
+.subItemImg {
+  width: 100%;
+  height: auto;
+  max-height: 75px; /* Limit height */
+  object-fit: contain; /* Or cover */
+  margin-bottom: 5px;
+  display: block; /* Remove potential extra space below img */
+}
+
+.gridLayout2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px; /* row column */
+}
+
+.gridItem {
+  text-align: left;
+}
+
+.gridItemImg {
+  width: 100%;
+  height: auto;
+  max-height: 100px; /* Example height */
+  object-fit: cover; /* Or contain */
+  margin-bottom: 5px;
+  display: block; /* Remove potential extra space below img */
+}
+
+.singleImageLayout {
+  width: 100%;
+}
+
+.singleImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Adjust as needed */
+  display: block; /* Remove potential extra space below img */
+}
+
+/* --- Item Labels --- */
+.itemLabel {
+  font-size: 12px;
+  color: #0f1111;
+  margin: 5px 0 0 0; /* Adjusted margin */
+  padding: 0;
+  text-align: left;
+  line-height: 1.3; /* Improve readability */
 }
