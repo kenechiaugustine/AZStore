@@ -3,6 +3,20 @@
   color: var(--white-secondary);
 }
 
+.scrollToTopLink {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #37475a;
+  color: white;
+  font-size: small;
+}
+
+.scrollToTopLink:hover {
+  background-color: #485769;
+}
+
 .FooterLinks {
   display: flex;
   padding: 50px 150px;

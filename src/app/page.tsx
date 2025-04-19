@@ -8,6 +8,8 @@ import Sidebar from '@/components/Sidebar/Sidebar';
 import ContentCardBasic from '@/components/HomeCardComponent/CardBasic';
 import ContentCardSingle from '@/components/HomeCardComponent/CardSingle';
 import ContentCardBasic2 from '@/components/HomeCardComponent/CardBasic2';
+import ScrollingProducts from '@/components/ScrollingProducts/ScrollingProducts';
+import { scrollingProductsSampleData } from '../data/scrollingProductsSample';
 
 interface ContentCardProps {
   title: string;
@@ -38,6 +40,15 @@ export default function HomePage() {
           <Navigation />
           <main className={styles.main}>
             <div className={styles.ImageContainer}></div>
+
+            <ScrollingProducts
+              title="Based on your searched results"
+              categoryName="Jeans"
+              seeMoreLink="#"
+              // isSeeMoreVisible={false}
+              productsData={scrollingProductsSampleData}
+            />
+
             <div className={styles.contentGrid}>
               <ContentCardBasic
                 title="Shop deals"
@@ -102,7 +113,36 @@ export default function HomePage() {
                 images={['https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75', 'https://placehold.co/100x75']}
               />
             </div>
+
+            <ScrollingProducts
+              title="Based on your searched results"
+              categoryName="Jeans"
+              seeMoreLink="#"
+              isSeeMoreVisible={false}
+              productsData={scrollingProductsSampleData}
+            />
+
+            <ScrollingProducts
+              title="Based on your searched results"
+              categoryName="Jeans"
+              seeMoreLink="#"
+              // isSeeMoreVisible={false}
+              productsData={scrollingProductsSampleData}
+            />
+
+            <div className={styles.signInRecommendationContainer}>
+              <div className={styles.signInRecommendationContent}>
+                <h1>See personalized recommendations</h1>
+                <a className={styles.signInRecommendationLink} href="#">
+                  Sign In
+                </a>
+                <p>
+                  New customer? <a href="#">Start here.</a>
+                </p>
+              </div>
+            </div>
           </main>
+
           <Footer />
         </div>
       </SidebarProvider>
