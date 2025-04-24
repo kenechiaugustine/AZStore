@@ -1,0 +1,153 @@
+.productCard {
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 3px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  /* height: 100%; */
+  /* flex: 1; */
+}
+
+.productImageContainer {
+  text-align: center;
+  margin-bottom: 10px;
+  /* height: 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  max-width: 165px;
+  max-height: 165px;
+  /* width: 165px; */
+  /* height: 165px; */
+  object-fit: contain;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productTitle {
+  color: #0f1111;
+  font-size: 14px;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  min-height: 70px;
+}
+
+.productTitle:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.productRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.stars {
+  color: #ffa41c;
+  margin-right: 5px;
+  letter-spacing: 1px;
+}
+
+.reviewCount {
+  color: #007185;
+  text-decoration: none;
+}
+
+.reviewCount:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: inline-block;
+  max-width: fit-content;
+}
+
+.amazonChoice {
+  background-color: #232f3e;
+  color: #fff;
+  /* Note: We apply badge and amazonChoice together in the component */
+}
+
+.dealBadge {
+  background-color: #cc0c39;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  max-width: fit-content;
+}
+
+.discountPercentage {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.dealText {
+  font-weight: normal;
+}
+
+.productPriceSection {
+  margin-bottom: 5px;
+}
+
+.currentPrice {
+  font-size: 18px;
+  color: #0f1111;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.listPrice {
+  font-size: 12px;
+  color: #565959;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.deliveryInfo,
+.shippingInfo,
+.stockInfo,
+.sustainabilityInfo {
+  font-size: 12px;
+  color: #0f1111;
+  margin-bottom: 3px;
+}
+
+.stockInfo {
+  color: #b12704;
+}
+
+.sustainabilityInfo {
+  color: #067d62;
+  font-size: 12px;
+}

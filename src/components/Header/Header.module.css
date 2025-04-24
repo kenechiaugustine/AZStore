@@ -7,6 +7,10 @@
   gap: 30px;
 }
 
+.Logo {
+  margin-top: 12px;
+}
+
 /* LocationContainer */
 .LocationContainer {
   display: flex;
@@ -19,7 +23,7 @@
   margin-right: 10px;
 }
 
-.Description{
+.Description {
   color: var(--white-secondary);
   font-size: 0.8rem;
 }

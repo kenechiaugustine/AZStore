@@ -1,3 +1,4 @@
+'use client';
 import { FaBars } from 'react-icons/fa6';
 import styles from './Navigation.module.css';
 import { useSidebar } from '@/hooks/SidebarContext';
@@ -17,7 +18,7 @@ export default function Navigation() {
             <a href="#">Today's Deals</a>
           </li>
           <li>
-            <a href="#">Registry</a>
+            <a href="/registry">Registry</a>
           </li>
           <li>
             <a href="#">Customer Service</a>

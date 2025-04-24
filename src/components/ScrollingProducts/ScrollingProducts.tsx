@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import styles from './ScrollingProducts.module.css';
-import { IScrollingProductsDto } from './interface';
+import { IProduct } from '@/types/interface';
 
 const SCROLL_AMOUNT = 300;
 
@@ -9,7 +9,7 @@ interface ScrollingProductsProps {
   categoryName: string;
   seeMoreLink: string;
   isSeeMoreVisible?: boolean;
-  productsData: IScrollingProductsDto[];
+  productsData: IProduct[];
 }
 
 export default function ScrollingProducts({ title, categoryName, seeMoreLink, isSeeMoreVisible = true, productsData }: ScrollingProductsProps) {
@@ -77,10 +77,10 @@ export default function ScrollingProducts({ title, categoryName, seeMoreLink, is
 
         <div className={styles.scrollContainer} ref={scrollContainerRef}>
           <div className={styles.productList}>
-            {productsData.map((product: IScrollingProductsDto) => (
+            {productsData.map((product: IProduct) => (
               <div key={product.id} className={styles.productItem}>
                 <a href={product.productLink?.startsWith('http') ? product.productLink : 'https://placehold.co/90x100?text=no_image'}>
-                  <img src={product.imageUrl} alt={product.productName} className={styles.productImage} loading="lazy" />
+                  <img src={product.imageUrl} alt={product.title} className={styles.productImage} loading="lazy" />
                 </a>
               </div>
             ))}

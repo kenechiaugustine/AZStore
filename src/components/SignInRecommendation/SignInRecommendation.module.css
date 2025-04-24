@@ -1,0 +1,43 @@
+.signInRecommendationContainer {
+  height: 100px;
+  background-color: white;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0;
+}
+
+.signInRecommendationContent h1,
+.signInRecommendationContent p {
+  text-align: center;
+  margin: 5px;
+}
+
+.signInRecommendationContent h1 {
+  font-size: 1.5rem;
+}
+
+.signInRecommendationContent p {
+  font-size: 0.8rem;
+}
+
+.signInRecommendationContent p a {
+  text-decoration: underline;
+}
+
+.signInRecommendationContent p a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.signInRecommendationLink {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  margin: 0 75px;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  background-color: #ffd814;
+}

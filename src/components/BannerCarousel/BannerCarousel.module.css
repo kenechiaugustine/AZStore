@@ -1,0 +1,121 @@
+.topBanner {
+  /* background-color: #fdd30f; */
+  /* background-image: url('./../../public/banner.jpg'); */
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.carouselContainer {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--carousel-bg-color, #f0f0f0);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.itemsWrapper {
+  /* flex: 1; */
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .imgContainer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 0;
+
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+.blendColor {
+  content: '';
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.navButton {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-20%);
+  background-color: rgba(0, 0, 0, 0.007);
+  color: black;
+  font-size: 80px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  height: 200px;
+  width: 80px;
+  border-radius: 5px;
+  z-index: 15;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+.navButton:active {
+  border: 3px solid blue;
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+@media (max-width: 1209px) {
+  .topBanner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topBanner {
+    height: 450px;
+  }
+  .navButton {
+    height: 100px;
+  }
+}
+
+@media (max-width: 660px) {
+  .navButton {
+    padding: 8px 12px;
+    font-size: 32px;
+    height: 50px;
+    width: 40px;
+  }
+  .topBanner {
+    height: 350px;
+  }
+}
